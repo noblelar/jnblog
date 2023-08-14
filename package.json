@@ -1,5 +1,5 @@
 {
-  "name": "jnblog",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://noblelar.github.io/jnblog",
@@ -43,3 +43,4 @@
     ]
   }
 }
+
