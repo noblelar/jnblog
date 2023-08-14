@@ -5,7 +5,7 @@ import { UserContext } from '../usercontext';
 function Header() {
     const { setUserInfo, userInfo } = useContext(UserContext);
     useEffect(() => {
-        fetch('http://localhost:4000/profile', {
+        fetch('https://blogserver-production.up.railway.app/profile', {
             credentials: 'include',
         }).then(response => {
             response.json().then(userInfo => {
@@ -16,7 +16,7 @@ function Header() {
 
     function logout() {
 
-        fetch('http://localhost:4000/logout', {
+        fetch('https://blogserver-production.up.railway.app/logout', {
             credentials: 'include',
             method: 'POST',
         });
